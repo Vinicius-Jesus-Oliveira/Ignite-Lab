@@ -17,7 +17,7 @@ jobs:
           node-version: 16
 
       - name: Install Prod Dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build Storybook
         run: yarn build-storybook
